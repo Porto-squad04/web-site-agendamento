@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}
+img{
+    width: 100px;
+    margin: 0px 0px 0px 10px ;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0px 20px 0px 0px;
+    
+}
+li{
+    margin: 0px 0px 0px 80px;
+}
+.navbar-nav{
+    margin: 0px 0px 0px 10px;
+}
