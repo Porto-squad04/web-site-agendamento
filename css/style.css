@@ -80,5 +80,69 @@ form input[type=submit]{
 form input[type=submit]:hover{
     transform: scale(1.05);
 }
-
-
+/* MENU LATERAL */
+.body{
+    height: 100vh;
+    background-color: white;
+}
+nav.menu-lateral{
+    width: 70px;
+    height: 100%;
+    background-color: #f5dbdd;
+    box-shadow: 3px 0px 0px gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .5s;
+}
+nav.menu-lateral.expandir{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding-left: 18px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.btn-expandir > i{
+    color: #000;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu:hover{
+    background-color: gray;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+ul li.ativo{
+    background-color: gray;
+}
+ul li.item-menu a{
+    color: #000;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 70px;
+    transition: .5s;
+    opacity: 0;
+}
+nav.menu-lateral.expandir .txt-link{
+    margin-left: 40px;
+    opacity: 1;
+}
+ul li.item-menu a .icon > i{
+    font-size: 27px;
+    margin-left: 15px;
+}
