@@ -160,3 +160,23 @@ ul li.item-menu a .icon > i{
     font-size: 27px;
     margin-left: 15px;
 }
+form .input-text .input:focus~label,
+form .input-text .input:valid~label {
+    transform: translateY(-25px);
+    font-size: 13px;
+    color: gray;
+}
+.input-text {
+    position: relative;
+    margin: 20px 0;
+}
+.input-text label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.2s;
+    cursor: text;
+}
+.form-control{
+    resize: none
+}
