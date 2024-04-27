@@ -88,7 +88,7 @@ form input[type=submit]:hover{
 nav.menu-lateral{
     width: 70px;
     height: 100%;
-    background-color: #f5dbdd;
+    background-color: #f0bdc1;
     box-shadow: 3px 0px 0px gray;
     position: fixed;
     top: 0;
@@ -116,27 +116,41 @@ ul{
     list-style-type: none;
 }
 ul li.item-menu:hover{
-    background-color: gray;
+    background-color: #e68d94;
 }
 ul li.item-menu{
     transition: .2s;
 }
 ul li.ativo{
-    background-color: gray;
+    background-color: #e68d94;
 }
 ul li.item-menu a{
     color: #000;
     text-decoration: none;
     font-size: 17px;
-    padding: 20px 4%;
+    padding: 10px 4%;
     display: flex;
-    margin-bottom: 20px;
-    line-height: 40px;
+    margin-bottom: 10px;
+    line-height: 25px;
 }
 ul li.item-menu a .txt-link{
     margin-left: 70px;
     transition: .5s;
     opacity: 0;
+}
+ul li.item-menu .sub-menu{
+    margin-left: 100px;
+    transition: .5s;
+    opacity: 0;
+}
+.sub-menu{
+    background-color: #e9a9ae;
+    padding-left: 100px;
+}
+nav.menu-lateral.expandir .sub-menu{
+    margin-left: 0;
+    opacity: 1;
+
 }
 nav.menu-lateral.expandir .txt-link{
     margin-left: 40px;
