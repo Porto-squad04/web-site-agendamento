@@ -6,7 +6,8 @@
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
 }
-body{
+
+body {
     width: 100%;
     height: 100vh;
     background-color: #f5dbdd;
@@ -14,6 +15,15 @@ body{
     align-items: center;
     justify-content: center;
 }
+
+#fotofundo {
+    width: 140vh;
+    height: 100vh;
+    background-image: url('../img/foto-fundo.png');
+    background-size: contain;
+    margin: 0px 0px 0px 70px;
+}
+
 .container{
     max-width: 1280px;
     height: 200px;
@@ -23,9 +33,11 @@ body{
     align-items: center;
     justify-content: center;
 }
+
 .container img{
     width: 200px;
 }
+
 form{
     background-color: #ffffff;
     max-width: 500px;
@@ -33,6 +45,7 @@ form{
     border-radius: 20px;
     padding: 50px;
 }
+
 form h1{
     text-align: center;
     font-size: 25px;
@@ -40,10 +53,12 @@ form h1{
     margin-bottom: 20px;
     padding: 0;
 }
+
 .input-login{
     position: relative;
     margin: 30px 0;
 }
+
 .input-login label{
     position: absolute;
     left: 0;
@@ -51,6 +66,7 @@ form h1{
     transition: all 0.2s;
     cursor: text;
 }
+
 .input{
     width: 100%;
     border: none;
@@ -59,16 +75,19 @@ form h1{
     font-size: 17px;
     outline: none;
 }
+
 form .input-login .input:focus ~ label,
 form .input-login .input:valid ~ label{
     transform: translateY(-25px);
     font-size: 13px;
     color: gray;
 }
+
 .btn-entrar{
     width: 100%;
     text-align: center;
 }
+
 form input[type=submit]{
     padding: 10px 40px;
     border: 0;
@@ -77,14 +96,13 @@ form input[type=submit]{
     cursor: pointer;
     transition: .2s;
 }
+
 form input[type=submit]:hover{
     transform: scale(1.05);
 }
+
 /* MENU LATERAL */
-.body{
-    height: 100vh;
-    background-color: white;
-}
+
 nav.menu-lateral{
     width: 70px;
     height: 100%;
@@ -96,34 +114,42 @@ nav.menu-lateral{
     overflow: hidden;
     transition: .5s;
 }
+
 nav.menu-lateral.expandir{
     width: 300px;
 }
+
 .btn-expandir{
     width: 100%;
     padding-left: 18px;
     margin-bottom: 25px;
     margin-top: 25px;
 }
+
 .btn-expandir > i{
     color: #000;
     font-size: 30px;
     font-weight: 600;
     cursor: pointer;
 }
+
 ul{
     height: 100%;
     list-style-type: none;
 }
+
 ul li.item-menu:hover{
     background-color: #e68d94;
 }
+
 ul li.item-menu{
     transition: .2s;
 }
+
 ul li.ativo{
     background-color: #e68d94;
 }
+
 ul li.item-menu a{
     color: #000;
     text-decoration: none;
@@ -133,43 +159,52 @@ ul li.item-menu a{
     margin-bottom: 10px;
     line-height: 25px;
 }
+
 ul li.item-menu a .txt-link{
     margin-left: 70px;
     transition: .5s;
     opacity: 0;
 }
+
 ul li.item-menu .sub-menu{
     margin-left: 100px;
     transition: .5s;
     opacity: 0;
 }
+
 .sub-menu{
     background-color: #e9a9ae;
     padding-left: 100px;
 }
+
 nav.menu-lateral.expandir .sub-menu{
     margin-left: 0;
     opacity: 1;
 
 }
+
 nav.menu-lateral.expandir .txt-link{
     margin-left: 40px;
     opacity: 1;
 }
+
 ul li.item-menu a .icon > i{
     font-size: 27px;
     margin-left: 15px;
 }
+
 form .input-text .input:focus~label,
 form .input-text .input:valid~label {
     transform: translateY(-25px);
     font-size: 13px;
     color: gray;
 }
+
 .input-text {
     position: relative;
     margin: 20px 0;
 }
+
 .input-text label {
     position: absolute;
     left: 0;
@@ -177,6 +212,7 @@ form .input-text .input:valid~label {
     transition: all 0.2s;
     cursor: text;
 }
+
 .form-control{
     resize: none
 }
