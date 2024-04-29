@@ -170,6 +170,9 @@ ul li.item-menu .sub-menu{
     margin-left: 100px;
     transition: .5s;
     opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .sub-menu{
@@ -180,7 +183,6 @@ ul li.item-menu .sub-menu{
 nav.menu-lateral.expandir .sub-menu{
     margin-left: 0;
     opacity: 1;
-
 }
 
 nav.menu-lateral.expandir .txt-link{
