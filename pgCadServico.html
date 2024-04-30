@@ -7,83 +7,102 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/sidebar.css">
 </head>
 
 <body>
-    <nav class="menu-lateral">
-        <div class="btn-expandir">
-            <i class="bi bi-list" id="btn-exp"></i>
-        </div><!--BTN-EXPANDIR-->
-        <ul>
-            <li class="item-menu ativo">
-                <a href="#" class="sub-btn">
-                    <span class="icon"><i class="bi bi-calendar-range-fill"></i></span><!--ICON-->
-                    <span class="txt-link">AGENDA</span><!--TXT-LINK-->
-                </a>
-                <div class="sub-menu">
-                    <a href="#" class="sub-item">MÊS</a>
-                    <a href="#" class="sub-item">SEMANA</a>
-                    <a href="#" class="sub-item">DIA</a>
-                </div><!--SUB-MENU-->
-            </li><!--ITEM-MENU-->
-            <li class="item-menu">
-                <a href="#" class="sub-btn">
-                    <span class="icon"><i class="bi bi-person-fill"></i></span><!--ICON-->
-                    <span class="txt-link">CLIENTE</span><!--TXT-LINK-->
-                </a>
-                <div class="sub-menu">
-                    <a href="#" class="sub-item">CADASTRAR CLIENTE</a>
-                    <a href="#" class="sub-item">CONSULTAR CLIENTE</a>
-                </div><!--SUB-MENU-->
-            </li><!--ITEM-MENU-->
-            <li class="item-menu">
-                <a href="#" class="sub-btn">
-                    <span class="icon"><i class="bi bi-building-fill-add"></i></span><!--ICON-->
-                    <span class="txt-link">SERVIÇOS</span><!--TXT-LINK-->
-                </a>
-                <div class="sub-menu">
-                    <a href="#" class="sub-item">CADASTRAR SERVIÇOS</a>
-                    <a href="#" class="sub-item">CONSULTAR SERVIÇOS</a>
-                </div><!--SUB-MENU-->
-            </li><!--ITEM-MENU-->
-        </ul>
-    </nav><!--MENU-LATERAL-->
-
-    <section class="form-container">
+    <nav id="sidebar">
+        <div id="sidebar-content">
+          <div id="usuario">
+            <img
+              src="img/TCAgenda-removebg-preview.png"
+              id="logo-empresa"
+              alt="Logo da empresa"
+            />
+            <p id="user-info">
+              <span class="descricao-item"> TC AGENDA </span
+              ><!--DESCRIÇÃO-ITEM-->
+              <span class="descricao-item"> Lorem ipsum </span>
+            </p>
+            <!--USER-INFO-->
+          </div>
+          <!--USUARIO-->
+          <ul id="side-items">
+            <li class="side-item">
+              <a href="#">
+                <i class="bi bi-calendar2-week"></i>
+                <span class="descricao-item"> AGENDA </span>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Dia</a></li>
+                <li><a href="#">Mês</a></li>
+                <li><a href="#">Ano</a></li>
+              </ul>
+            </li>
+            <!--SIDE-ITEM-->
+            <li class="side-item">
+              <a href="#">
+                <i class="bi bi-people"></i>
+                <span class="descricao-item"> CLIENTES </span>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Consultar Clientes</a></li>
+                <li><a href="#">Cadastrar Clientes</a></li>
+              </ul>
+            </li>
+            <!--SIDE-ITEM-->
+            <li class="side-item">
+              <a href="#">
+                <i class="bi bi-person-workspace"></i>
+                <span class="descricao-item"> SERVIÇOS </span>
+              </a>
+              <ul class="submenu">
+                <li><a href="#">Consultar Serviços</a></li>
+                <li><a href="#">Cadastrar Serviços</a></li>
+              </ul>
+            </li>
+            <!--SIDE-ITEM-->
+            <li class="side-item">
+              <a href="#">
+                <i class="bi bi-gear-fill"></i>
+                <span class="descricao-item"> CONFIGURAÇÕES </span>
+              </a>
+            </li>
+            <!--SIDE-ITEM-->
+          </ul>
+          <!--SIDE-ITEMS-->
+          <button id="open-btn">
+            <i id="open-btn-icon" class="bi bi-chevron-right"></i>
+          </button>
+        </div>
+        <div id="logout">
+          <button id="logout-btn">
+            <i class="bi bi-box-arrow-left"></i>
+            <span class="descricao-item">LOGOUT</span>
+          </button>
+        </div>
+      </nav>
+      <main>
         <div class="container">
-            <img src="img/TCAgenda-removebg-preview.png" alt="TC Agenda" class="img-fluid">
-            <form action="">
-                <h1>Cadastrar Serviço</h1>
-                <div class="input-text">
-                    <select class="form-control" id="procedure" required>
-                        <option value="">Procedimentos disponiveis</option>
-                        <option value="procedure1">Procedimento 1</option>
-                        <option value="procedure2">Procedimento 2</option>
-                        <option value="procedure3">Procedimento 3</option>
-                    </select>
-                </div> <!--INPUT-ProcedimentosDisponiveis-->
-                <div class="input-text">
-                    <input type="time" name="" id="time" class="input" autocomplete="off" required>
-                    <label for="time">Horarios Disponiveis</label>
-                </div><!--INPUT-LOGIN-->
-                <div class="input-text">
-                    <input type="text" name="" id="register" class="input" autocomplete="off" required>
-                    <label for="register">Registrar Novo Procedimento</label>
-                </div><!--INPUT-LOGIN-->
-                <div class="form-group">
-                    <label for="obsInput">OBS</label>
-                    <textarea class="form-control" id="obsInput" rows="3"></textarea>
-                </div>
-                <div class="btn-entrar"><input type="submit" value="REGISTER">
-                    <div>
-                        <div class="form-row align-items-center"></div>
-                    </div>
-                </div>
-
+            <form action="#">
+                <h1>CADASTRAR SERVIÇOS</h1>
+                <div class="servico">
+                    <input type="text" name="" id="nome-servico" class="input" autocomplete="off" required>
+                    <label for="nome-servico">Nome do Serviço</label>
+                  </div><!--INPUT-LOGIN-->
+                  <div class="servico">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Selecione um tipo de serviço</option>
+                        <option value="1">Opção 1</option>
+                        <option value="2">Opção 2</option>
+                        <option value="3">Opção 3</option>
+                      </select>
+                  </div><!--INPUT-LOGIN-->
+                  
+                  <div class="btn-cadastrar"><input type="submit" value="CADASTRAR SERVIÇO"></div>
             </form>
-        </div><!--CONTAINER-->
-    </section><!--FORM-CONTAINER-->
+        </div>
+      </main>
     <script src="js/menu.js"></script>
 </body>
 
