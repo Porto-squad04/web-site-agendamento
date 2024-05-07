@@ -179,11 +179,7 @@ main{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-<<<<<<< HEAD
   width: 100%;
-=======
-  max-width: 100%;
->>>>>>> 365113ecc754dbac7e562e3e2b909f8bc6046aef
   height: auto;
   padding: 70px;
   background-color: white;
