@@ -217,6 +217,26 @@ h2{
   background-color: #cfcfcf;
   margin: 20px 0;
 }
+.textarea-servico {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+.textarea-servico > label{
+    font-weight: 480;
+    margin-bottom: 8px;
+}
+#descricao-serviço {
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column; */
+    width: 100%;
+    font-size: 16px;
+    height: 120px;
+    border-color: #cfcfcf;
+}
 .button-container {
   display: flex;
   justify-content: space-around;
@@ -264,3 +284,5 @@ h2{
     margin-right: 10px;
     font-weight: 600;
 }
+
+  
