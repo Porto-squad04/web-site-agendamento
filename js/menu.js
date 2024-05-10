@@ -1,3 +1,4 @@
+/* FUNÇÃO MENU*/
 document.getElementById('open-btn').addEventListener('click', function() {
     document.getElementById('sidebar').classList.toggle('open-sidebar');
   });
@@ -5,7 +6,7 @@ document.getElementById('open-btn').addEventListener('click', function() {
     window.location.href = 'index.html';
   });
 
-  /*FUNÇÃO BOM DIA*/
+/*FUNÇÃO BOM DIA*/
 window.onload = function() {
   var hora = new Date().getHours();
   var saudacao;

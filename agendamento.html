@@ -30,12 +30,19 @@
           </p>
           <!--USER-INFO-->
         </div>
-        <!--USUARIO-->
+        <!--SIDE-ITEM-->
         <ul id="side-items">
+          <li class="side-item">
+            <a href="agendamento.html">
+              <i class="bi bi-alarm"></i>
+              <span class="descricao-item"> AGENDAMENTO </span>
+            </a>
+          </li>
+        <!--SIDE-ITEM-->
           <li class="side-item">
             <a href="#">
               <i class="bi bi-calendar2-week"></i>
-              <span class="descricao-item"> AGENDA </span>
+              <span class="descricao-item"> CALENDÁRIO </span>
             </a>
           </li>
           <!--SIDE-ITEM-->
@@ -96,16 +103,16 @@
           </select>
         </div>
         <div class="input-field">
-          <label for="descricao">Descrição do serviço</label>
-          <input type="text" id="descricao" required />
-        </div>
-        <div class="input-field">
           <label for="data">Data do Agendamento</label>
           <input type="date" id="data" required>
         </div>
         <div class="input-field">
-          <label for="salas">Número da Sala (Se necessário)</label>
-          <input type="text" id="salas">
+          <label for="hora">Horário do Agendamento</label>
+          <input type="time" id="hora" name="hora">
+        </div>
+        <div class="input-field">
+          <label for="descricao">Descrição do serviço</label>
+          <input type="text" id="descricao" required />
         </div>
         <div class="input-field">
           <label for="equipamentos">Número do Equipamento (Se necessário)</label>
