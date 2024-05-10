@@ -26,7 +26,7 @@
           <p id="user-info">
             <span class="descricao-item"> TC AGENDA </span
             ><!--DESCRIÇÃO-ITEM-->
-            <span class="descricao-item"> Lorem ipsum </span>
+            <span class="descricao-item" id="saudacao"> saudação </span>
           </p>
           <!--USER-INFO-->
         </div>
@@ -89,7 +89,7 @@
         <div class="input-field">
           <label for="nome">Profissional Responsável</label>
           <select class="form-select" aria-label="Default select example">
-            <option selected>Selecione uma opção</option>
+            <option selected>Nenhum</option>
             <option value="1">Mariana Leide Silva</option>
             <option value="2">Marcos Antônio Solvedo</option>
             <option value="3">Leide Marcone</option>
@@ -97,19 +97,27 @@
         </div>
         <div class="input-field">
           <label for="descricao">Descrição do serviço</label>
-          <input type="text" id="nome" required />
+          <input type="text" id="descricao" required />
         </div>
         <div class="input-field">
           <label for="data">Data do Agendamento</label>
           <input type="date" id="data" required>
         </div>
         <div class="input-field">
-          <label for="salas">Número da Sala (Se necessário) </label>
+          <label for="salas">Número da Sala (Se necessário)</label>
           <input type="text" id="salas">
         </div>
         <div class="input-field">
-          <label for="equipamentos">Equipamento (Se necessário) </label>
+          <label for="equipamentos">Número do Equipamento (Se necessário)</label>
           <input type="text" id="equipamentos">
+        </div>
+        <div class="input-field">
+          <label for="nome">Nome do cliente</label>
+          <input type="text" id="nome">
+        </div>
+        <div class="input-field">
+          <label for="nome">CPF</label>
+          <input type="text" id="nome">
         </div>
         <div class="divider"></div>
         <button type="submit" id="botaoCadastrar"><i class="bi bi-person-plus"></i>Cadastrar</button>
