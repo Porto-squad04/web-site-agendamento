@@ -83,53 +83,74 @@
     <!--SIDEBAR-->
     <main>
       <div class="container">
-        <h2>Cliente</h2>
-        <div class="input-field">
-          <label for="nome">Nome</label>
-          <input type="text" id="nome" required />
-        </div>
-        <div class="button-container">
-          <button type="submit" id="consulcliente"><i class="bi bi-search"></i>Consultar</button>
-          <button type="submit" id="cadcliente"><i class="bi bi-person-plus"></i>Cadastrar</button>
-        </div>
-        <div class="divider"></div>
-        <h2>Cadastro</h2>
-        <div class="input-field">
-          <label for="nome">Nome Completo</label>
-          <input type="text" id="nome" required />
-        </div>
-        <div class="input-field">
-          <label for="telefone">Telefone</label>
-          <input type="tel" id="telefone" required />
-        </div>
-        <div class="input-field">
-          <label for="cpf">CPF</label>
-          <input type="text" id="cpf" required />
-        </div>
-        <div class="input-field">
-          <label for="endereco">Endereço</label>
-          <input type="text" id="endereco" required />
-        </div>
-        <div class="input-field">
-          <label for="estado">Estado</label>
-          <input type="text" id="estado" required />
-        </div>
-        <div class="input-field">
-          <label for="cidade">Cidade</label>
-          <input type="text" id="cidade" required />
-        </div>
-        <div class="input-field">
-          <label for="cep">Data de Nascimento</label>
-          <input type="text" id="cep" required />
-        </div>
-        <div class="input-field">
-          <label for="cep">CEP</label>
-          <input type="text" id="cep" required />
-        </div>
-        <button type="submit" id="botaoEditar"> <i class="bi bi-pencil"></i> Editar</button>
-        <button type="submit" id="botaoExcluir"><i class="bi bi-trash3"></i>Excluir</button>
-        <button type="submit" id="botaoCadastrar"><i class="bi bi-person-plus"></i>Cadastrar</button>
-      </div>
+        <div class="header-cliente">
+          <h2>Clientes</h2>
+          <a href="#">
+            <button>Cadastrar</button>
+          </a>
+        </div><!--HEADER-CLIENTE-->
+        <div class="header2-cliente">
+          <div class="select-container">
+            <label for="cliente">Tipo de Cliente</label>
+            <select id="cliente" class="form-select" aria-label="Default select example">
+              <option selected>Tipo de Cliente</option>
+              <option value="1">Todos</option>
+              <option value="2">Cliente</option>
+              <option value="3">Profissional</option>
+            </select>
+          </div>          
+          <input type="text" name="nome" placeholder="Nome" class="input-text">
+          <input type="number" name="cpf/cnpj" placeholder="CPF/CNPJ" class="input-number">
+          <input type="number" name="telefone" placeholder="Telefone" class="input-number">
+          <a href="#">
+            <button>Consultar</button>
+          </a>
+        </div><!--HEADER2-CLIENTE-->
+        <div class="table-cliente">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Endereço</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lucas Menezes</td>
+                <td>Cliente</td>
+                <td>Rua das Flores, 123, Centro, São Paulo, SP, 01000-000</td>
+                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td>Julia Carvalho</td>
+                <td>Profissional</td>
+                <td>Avenida do Sol, 456, Jardim Botânico, Rio de Janeiro, RJ, 22460-000</td>
+                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td>Mateus Barbosa</td>
+                <td>Profissional</td>
+                <td>Travessa da Lua, 789, Boa Vista, Recife, PE, 50070-000</td>
+                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td>Ana Clara Ferreira</td>
+                <td>Cliente</td>
+                <td>Praça das Estrelas, 321, Savassi, Belo Horizonte, MG, 30140-000</td>
+                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
+              </tr>
+              <tr>
+                <td>Pedro Henrique Silva</td>
+                <td>Cliente</td>
+                <td>Alameda dos Planetas, 654, Batel, Curitiba, PR, 80420-000</td>
+                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div><!--TABLE-CLIENTE-->
+      </div><!--CONTAINER-->
     </main>
     <script src="js/menu.js"></script>
   </body>
