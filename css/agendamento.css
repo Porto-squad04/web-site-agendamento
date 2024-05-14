@@ -248,3 +248,14 @@ h2{
     margin-right: 10px;
     font-weight: 600;
 }
+
+#linkcliente {
+  display: inline-block;
+  color: #6b6b6b;
+  margin-left: 5px;
+}
+
+#linkcliente:hover {
+  background-color: #f5dbdd;
+  color: #6b6b6b;
+}
