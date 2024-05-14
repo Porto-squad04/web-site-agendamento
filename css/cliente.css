@@ -182,7 +182,7 @@ main {
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 50px;
   border-radius: 8px;
 }
 /* HEADER-CLIENTE */
@@ -208,6 +208,11 @@ main {
   background-color: #f5dbdd;
   color: #6b6b6b;
   padding: 10px 20px;
+}
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #cfcfcf;
 }
 /* HEADER2-CLIENTE */
 .header2-cliente {
@@ -279,5 +284,8 @@ label {
 /* FOOTER */
 .footer-cliente{
   display: flex;
+  flex-direction: row-reverse;
+  margin-top: 20px;
+  margin-right: 65px;
 }
 
