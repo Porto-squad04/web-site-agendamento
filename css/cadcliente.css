@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5dbdd;
+}
+#sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 100vh;
+  border-radius: 0px 18px 18px 0px;
+  position: relative;
+  transition: all .5s ease;
+  min-width: 90px;
+  left: 0;
+}
+#sidebar-content{
+  padding: 12px;
+}
+#usuario{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+#logo-empresa{
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+#user-info{
+  display: flex;
+  flex-direction: column;
+}
+#user-info span:last-child{
+  color: #6b6b6b;
+  font-size: 12px;
+}
+#side-items{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+.side-item{
+  border-radius: 8px;
+  padding: 14px;
+  cursor: pointer;
+}
+.side-item.active{
+  background-color: #f5dbdd;
+}
+.side-item:hover:not(.active), #logout-btn:hover{
+  background-color: #f5dbdd;
+}
+.side-item a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+}
+.side-item.active a{
+  color: #e3e9f7;
+}
+.side-item a i{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+#logout{
+  border-top: 1px solid #e3e9f7;
+  padding: 12px;
+}
+#logout-btn{
+  border: none;
+  padding: 12px;
+  font-size: 14px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  border-radius: 8px;
+  text-align: start;
+  cursor: pointer;
+  background-color: transparent;
+}
+#open-btn{
+  position: absolute;
+  top: 30px;
+  right: -12px;
+  background-color: #000;
+  color: #e3e9f7;
+  border-radius: 100%;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+}
+#open-btn-icon{
+  transition: .3s ease;
+}
+.open-sidebar #open-btn-icon{
+  transform: rotate(180deg);
+}
+.descricao-item{
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  transition: width .5s;
+  height: 0px;
+}
+#sidebar.open-sidebar{
+  min-width: 12%;
+}
+#sidebar.open-sidebar .descricao-item{
+  width: 150px;
+  height: auto;
+}
+#sidebar.open-sidebar .side-item a{
+  justify-content: flex-start;
+  gap: 14px;
+}
+.submenu {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+.submenu{
+  width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  transition: width .5s;
+  height: 0px;
+  margin-left: 32px;
+}
+#sidebar.open-sidebar .submenu{
+  width: 150px;
+  height: auto;
+}
+
+.side-item.active .submenu {
+  display: flex;
+}
+.submenu li{
+  text-align: center;
+  border-radius: 8px;
+  padding: 5px;
+}
+.submenu li:hover{
+  background-color: #6665808a;
+}
+/* ESTILO MAIN */
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 80px;
+  border-radius: 8px;
+  font-size: 18px
+}
+/* HEADER-CLIENTE */
+.header-cliente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.header-cliente button {
+  background-color: #6b6b6b;
+  color: #fff; 
+  padding: 8px 18px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer; 
+  border: none; 
+  border-radius: 8px; 
+}
+.header-cliente button:hover {
+  background-color: #f5dbdd;
+  color: #6b6b6b;
+  padding: 10px 20px;
+}
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: #cfcfcf;
+  margin-top: 20px;
+}
+/* HEADER2-CLIENTE */
+.header2-cliente {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+label {
+  display: block; 
+  margin-bottom: 5px;
+  font-size: 10px;
+}
+.header3-cliente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+.header3-cliente .input-field {
+    display: flex;
+    flex-direction: column;
+    width: 21vw;
+    height: 8vh;
+    margin-top: 20px;
+}
+.input-field > label {
+    font-size: 14px;
+    font-weight: 480;
+    margin-bottom: 8px;
+    color: #0a0a0a;
+}
+.input-field > input{
+    height: 35px;
+    border-radius: 8px;
+    border: 1px solid #cfcfcf;
+    padding: 0 30px;
+    font-size: 15px;
+    width: 100%;
+  }
+.select-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+}
+.form-select {
+  width: 21vw; 
+  border: none; 
+  border-bottom: 1px solid #6b6b6b; 
+  background: transparent; 
+  outline: none; 
+  padding: 10px 0; 
+}
+.input-text, .input-number{
+  width: 18%;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #6b6b6b;
+  border-radius: 5px;
+}
+.input-text:focus, .input-number:focus{
+  border-color: #6b6b6b;
+  outline: none;
+}
+.header2-cliente button{
+  background-color: #6b6b6b;
+  color: #fff; 
+  padding: 8px 18px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  margin-bottom: 25px;
+  cursor: pointer; 
+  border: none; 
+  border-radius: 8px;
+}
+/* TABLE-CLIENTE */
+.table-cliente table{
+  width: 100%;
+  height: 100%;
+  border-collapse: separate;
+  border-spacing: 10px 30px;
+  text-align: left;
+}
+.table-cliente td {
+  padding: 5px 10px;
+}
+.table-cliente i {
+  color: #6b6b6b;
+  font-size: 18px;
+  margin-right: 1px;
+}
+/* FOOTER */
+.footer-cliente{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.footer-cliente button {
+    background-color: #6b6b6b;
+    color: #fff; 
+    padding: 8px 18px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer; 
+    border: none; 
+    border-radius: 8px; 
+  }
+

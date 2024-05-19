@@ -7,7 +7,7 @@
     <!-- FAVICON-->
     <link rel="shortcut icon" href="img/tcfavicon.png" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/cliente.css" />
+    <link rel="stylesheet" href="css/cadcliente.css" />
     <!--ICONS-->
     <link
       rel="stylesheet"
@@ -84,13 +84,31 @@
     <main>
       <div class="container">
         <div class="header-cliente">
-          <h2>Clientes</h2>
-          <a href="cadcliente.html">
-            <button>Cadastrar</button>
+          <h2>Cadastro de Clientes</h2>
+          <a href="cliente.html">
+            <button>Lista de Clientes</button>
           </a>
         </div><!--HEADER-CLIENTE-->
         <div class="divider"></div>
         <div class="header2-cliente">
+          <div class="select-container">
+            <label for="cliente">Tipo</label>
+            <select id="cliente" class="form-select" aria-label="Default select example">
+              <option selected>Selecione um Tipo</option>
+              <option value="1">Pessoa Física</option>
+              <option value="2">Pessoa Juri</option>
+              <option value="3">Profissional</option>
+            </select>
+          </div>
+          <div class="select-container">
+            <label for="cliente">Sexo</label>
+            <select id="cliente" class="form-select" aria-label="Default select example">
+              <option selected>Selecione um Tipo</option>
+              <option value="1">Masculino</option>
+              <option value="2">Feminino</option>
+              <option value="3">Outros</option>
+            </select>
+          </div>
           <div class="select-container">
             <label for="cliente">Categoria</label>
             <select id="cliente" class="form-select" aria-label="Default select example">
@@ -99,60 +117,62 @@
               <option value="2">Cliente</option>
               <option value="3">Profissional</option>
             </select>
-          </div>          
-          <input type="text" name="nome" placeholder="Nome" class="input-text">
-          <input type="number" name="cpf/cnpj" placeholder="CPF/CNPJ" class="input-number">
-          <input type="number" name="telefone" placeholder="Telefone" class="input-number">
-          <a href="#">
-            <button>Consultar</button>
-          </a>
+          </div>
         </div><!--HEADER2-CLIENTE-->
-        <div class="table-cliente">
-          <table>
-            <thead>
-              <tr>
-                <th>Nome</th>
-                <th>Categoria</th>
-                <th>Endereço</th>
-                <th>Ações</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Lucas Menezes</td>
-                <td>Cliente</td>
-                <td>Rua das Flores, 123, Centro, São Paulo, SP, 01000-000</td>
-                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
-              </tr>
-              <tr>
-                <td>Julia Carvalho</td>
-                <td>Profissional</td>
-                <td>Avenida do Sol, 456, Jardim Botânico, Rio de Janeiro, RJ, 22460-000</td>
-                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
-              </tr>
-              <tr>
-                <td>Mateus Barbosa</td>
-                <td>Profissional</td>
-                <td>Travessa da Lua, 789, Boa Vista, Recife, PE, 50070-000</td>
-                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
-              </tr>
-              <tr>
-                <td>Ana Clara Ferreira</td>
-                <td>Cliente</td>
-                <td>Praça das Estrelas, 321, Savassi, Belo Horizonte, MG, 30140-000</td>
-                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
-              </tr>
-              <tr>
-                <td>Pedro Henrique Silva</td>
-                <td>Cliente</td>
-                <td>Alameda dos Planetas, 654, Batel, Curitiba, PR, 80420-000</td>
-                <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!--TABLE-CLIENTE-->
+        <div class="header3-cliente">
+            <div class="input-field">
+                <label for="descricao">Nome</label>
+                <input type="text" id="nome" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Endereço</label>
+                <input type="text" id="endereço" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">CEP</label>
+                <input type="text" id="cep" required/>
+              </div>
+              <div class="input-field">
+                <label for="descricao">CPF</label>
+                <input type="number" id="cpf" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Cidade</label>
+                <input type="text" id="cidade" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Estado</label>
+                <input type="text" id="estado" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Email</label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Bairro</label>
+                <input type="text" id="bairro" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Número</label>
+                <input type="number" id="numero" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Data de Nascimento</label>
+                <input type="date" id="dataNasc" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Complemento</label>
+                <input type="text" id="complemento" required />
+              </div>
+              <div class="input-field">
+                <label for="descricao">Observação</label>
+                <input type="text" id="Observacao" required />
+              </div>
+          </div><!--header3-cliente-->
         <div class="footer-cliente">
-          <p><a href="#"><i class="bi bi-caret-left"></i></a> 1 2 3.... <a href="#"><i class="bi bi-caret-right"></i></a></p>
+            <a href="cliente.html">
+                <button>Cadastrar</button>
+            </a>
         </div>
       </div><!--CONTAINER-->
     </main>
