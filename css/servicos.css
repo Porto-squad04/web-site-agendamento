@@ -203,13 +203,22 @@ h2{
   margin-bottom: 8px;
   color: #0a0a0a;
 }
-.input-field > input, .input-field > select {
+.input-field > input{
   height: 35px;
   border-radius: 8px;
   border: 1px solid #cfcfcf;
   padding: 0 30px;
   font-size: 15px;
   width: 100%;
+}
+.form-select {
+  width: 21vw; 
+  border: none; 
+  border-bottom: 1px solid #6b6b6b; 
+  background: transparent; 
+  outline: none; 
+  padding: 10px 0; 
+  margin-top: 28px;
 }
 .divider {
   width: 100%;
