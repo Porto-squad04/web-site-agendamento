@@ -295,7 +295,7 @@ Docs & License: https://fullcalendar.io
             today: 'Avui',
             year: 'Any',
             month: 'Mes',
-            week: 'Setmana',
+            week: 'Semana',
             day: 'Dia',
             list: 'Agenda',
         },
