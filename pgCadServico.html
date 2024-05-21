@@ -83,52 +83,67 @@
     <!--SIDEBAR-->
     <main>
       <div class="container">
-        <h2>Serviços</h2>
-        <div class="select-container">
-          <label for="cliente">Tipo</label>
-          <select id="cliente" class="form-select" aria-label="Default select example">
-            <option selected>Selecione um Tipo</option>
-            <option value="1">Consulta</option>
-            <option value="2">Aluguel de Equipamento</option>
-            <option value="3">Aluguel de Sala</option>
-          </select>
-        </div>
-        <div class="button-container">
-          <button type="submit" id="consulcliente">
-            <i class="bi bi-search"></i>Consultar
-          </button>
-          <button type="submit" id="cadcliente">
-            <i class="bi bi-person-plus"></i>Cadastrar
-          </button>
-        </div>
+        <div class="header-cliente">
+          <h2>Serviços</h2>
+        </div><!--HEADER-CLIENTE-->
+        <div class="header2-cliente">
+          <div class="select-container">
+            <label for="cliente">Serviços Disponíveis</label>
+            <select id="cliente" class="form-select" aria-label="Default select example">
+              <option selected>Selecione um Serviço</option>
+              <option value="1">Consulta</option>
+              <option value="2">Aluguel de Sala</option>
+              <option value="3">Aluguel de Equipamentos</option>
+            </select>
+          </div>
+          <div class="input-servico">
+            <label for="#">Nome do Serviço</label> 
+            <input type="text" name="nome" placeholder="Nome" class="input-text">
+          </div>         
+          <a href="#">
+            <button>Consultar</button>
+          </a>
+        </div><!--HEADER2-CLIENTE-->
         <div class="divider"></div>
-        <h2>Cadastro</h2>
-        <div class="input-field">
-          <label for="nome">Nome do Serviço</label>
-          <input type="text" id="nome" required />
+        <div class="main-cliente">
+          <h2>Cadastrar Serviço</h2>
+          <div class="main-cliente-container">
+            <div class="input-servico">
+              <label for="#">Nome do Serviço</label> 
+              <input type="text" name="nome" placeholder="Nome" class="input-text">
+            </div> 
+            <div class="select-container">
+              <label for="cliente">Serviços Disponíveis</label>
+              <select id="cliente" class="form-select" aria-label="Default select example">
+                <option selected>Selecione um Serviço</option>
+                <option value="1">Consulta</option>
+                <option value="2">Aluguel de Sala</option>
+                <option value="3">Aluguel de Equipamentos</option>
+              </select>
+            </div>
+            <div class="input-servico">
+              <label for="#">Descrição do Serviço</label> 
+              <input type="text" name="nome" placeholder="Nome" class="input-text">
+            </div> 
+          </div> 
+          <div class="textarea-obs">
+            <label for="meuTextarea">Observação:</label>
+            <textarea name="Observação" id="meuTextarea" placeholder="  Descreva mais sobre o serviço...."></textarea>
+          </div>       
         </div>
-        <div class="input-field">
-          <label for="nome">Tipo do Serviço</label>
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Selecione um Tipo</option>
-            <option value="1">Tipo 01</option>
-            <option value="2">Tipo 02</option>
-            <option value="3">Tipo 03</option>
-          </select>
+        <div class="footer-cliente">
+          <div class="footer-cliente-btn">
+            <a href="#">
+              <button>Editar</button>
+            </a>
+            <a href="#">
+              <button>Excluir</button>
+            </a>
+            <a href="#">
+              <button>Cadastrar</button>
+            </a>
+          </div>
         </div>
-        <div class="textarea-servico">
-            <label for="descricao">Descrição:</label>
-            <textarea name="descricao" id="descricao-serviço"></textarea>
-        </div>
-        <button type="submit" id="botaoEditar">
-          <i class="bi bi-pencil"></i> Editar
-        </button>
-        <button type="submit" id="botaoExcluir">
-          <i class="bi bi-trash3"></i>Excluir
-        </button>
-        <button type="submit" id="botaoCadastrar">
-          <i class="bi bi-person-plus"></i>Cadastrar
-        </button>
       </div>
     </main>
     <script src="js/menu.js"></script>

@@ -229,7 +229,8 @@ main {
 label {
   display: block; 
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 550;
 }
 .select-container {
   display: flex;
@@ -237,7 +238,7 @@ label {
   margin-bottom: 38px;
 }
 .form-select {
-  width: 220px; 
+  width: 18vw; 
   border: none; 
   border-bottom: 1px solid #6b6b6b; 
   background: transparent; 
@@ -245,7 +246,7 @@ label {
   padding: 10px 0; 
 }
 .input-text, .input-number{
-  width: 18%;
+  width: 16vw;
   padding: 4px;
   margin-bottom: 10px;
   border: 1px solid #6b6b6b;
@@ -268,6 +269,11 @@ label {
   cursor: pointer; 
   border: none; 
   border-radius: 8px;
+}
+.header2-cliente button:hover {
+  background-color: #f5dbdd;
+  color: #6b6b6b;
+  padding: 10px 20px;
 }
 /* TABLE-CLIENTE */
 .table-cliente table{

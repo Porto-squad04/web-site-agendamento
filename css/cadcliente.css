@@ -229,7 +229,8 @@ main {
 label {
   display: block; 
   margin-bottom: 5px;
-  font-size: 10px;
+  font-size: 15px;
+  font-weight: 550;
 }
 .header3-cliente {
     display: flex;
@@ -241,7 +242,7 @@ label {
 .header3-cliente .input-field {
     display: flex;
     flex-direction: column;
-    width: 21vw;
+    width: 24vw;
     height: 8vh;
     margin-top: 20px;
 }
@@ -258,14 +259,14 @@ label {
     padding: 0 30px;
     font-size: 15px;
     width: 100%;
-  }
+}
 .select-container {
   display: flex;
   flex-direction: column;
   margin-bottom: 38px;
 }
 .form-select {
-  width: 21vw; 
+  width: 24vw; 
   border: none; 
   border-bottom: 1px solid #6b6b6b; 
   background: transparent; 
@@ -330,5 +331,10 @@ label {
     cursor: pointer; 
     border: none; 
     border-radius: 8px; 
-  }
+}
+.footer-cliente button:hover {
+  background-color: #f5dbdd;
+  color: #6b6b6b;
+  padding: 10px 20px;
+}
 
