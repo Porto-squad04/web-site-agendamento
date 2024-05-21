@@ -287,6 +287,12 @@ label {
   display: flex;
   flex-direction: column;
 }
+.main-cliente .divider {
+  width: 100%;
+  height: 2px;
+  background-color: #cfcfcf;
+  margin-bottom: 35px;
+}
 .main-cliente h2{
   margin-top: 30px;
   margin-bottom: 40px;
@@ -333,4 +339,9 @@ label {
   cursor: pointer; 
   border: none; 
   border-radius: 8px; 
+}
+.footer-cliente button:hover {
+  background-color: #f5dbdd;
+  color: #6b6b6b;
+  padding: 10px 20px;
 }
