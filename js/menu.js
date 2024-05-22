@@ -22,3 +22,30 @@ window.onload = function() {
 
   document.getElementById('saudacao').innerText = saudacao;
 };
+
+// FUNÇÃO VALOR DO SERVIÇO
+
+const select = document.getElementById('clienteServico');
+const valorDiv = document.getElementById('valor');
+const inputField = document.getElementById('inputValor');
+
+select.addEventListener('change', () => {
+    const escolha = select.value;
+    let valor;
+
+    switch (escolha) {
+        case 'consul':
+            valor = parseFloat(inputField.value) || 0;
+            break;
+        case 'alSala':
+            valor = parseFloat(inputField.value) || 0;
+            break;
+        case 'alEq':
+            valor = parseFloat(inputField.value) || 0;
+            break;
+        default:
+            valor = 0;
+    }
+
+    valorDiv.innerHTML = `<sup>R$</sup><span>${valor.toFixed(2)}</span>`;
+});

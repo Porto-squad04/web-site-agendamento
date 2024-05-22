@@ -89,18 +89,19 @@
         <div class="divider"></div>
         <div class="header2-cliente">
           <div class="select-container">
-            <label for="cliente">Serviços Disponíveis</label>
-            <select id="cliente" class="form-select" aria-label="Default select example">
+            <label for="cliente">Tipo de Serviço</label>
+            <select id="clienteServico" class="form-select" aria-label="Default select example">
               <option selected>Selecione um Serviço</option>
-              <option value="1">Consulta</option>
-              <option value="2">Aluguel de Sala</option>
-              <option value="3">Aluguel de Equipamentos</option>
+              <option value="consul">Consulta</option>
+              <option value="alSala">Aluguel de Sala</option>
+              <option value="alEq">Aluguel de Equipamentos</option>
             </select>
           </div>
           <div class="input-servico">
             <label for="#">Nome do Serviço</label> 
             <input type="text" name="nome" placeholder="Nome" class="input-text">
-          </div>         
+          </div>
+          <div id="valor"></div>         
           <a href="#">
             <button>Consultar</button>
           </a>
@@ -115,12 +116,16 @@
             </div> 
             <div class="select-container">
               <label for="cliente">Serviços Disponíveis</label>
-              <select id="cliente" class="form-select" aria-label="Default select example">
+              <select id="clienteServico" class="form-select" aria-label="Default select example">
                 <option selected>Selecione um Serviço</option>
-                <option value="1">Consulta</option>
-                <option value="2">Aluguel de Sala</option>
-                <option value="3">Aluguel de Equipamentos</option>
+                <option value="consul">Consulta</option>
+                <option value="alSala">Aluguel de Sala</option>
+                <option value="alEq">Aluguel de Equipamentos</option>
               </select>
+            </div>
+            <div class="input-valor">
+              <label for="inputValor">Digite o valor:</label>
+            <input type="number" id="inputValor" placeholder="Digite o valor aqui">
             </div>
             <div class="input-servico">
               <label for="#">Descrição do Serviço</label> 
