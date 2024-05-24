@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cliente</title>
+    <title>Serviços</title>
     <!-- FAVICON-->
     <link rel="shortcut icon" href="img/tcfavicon.png" type="image/x-icon">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/cliente.css" />
+    <link rel="stylesheet" href="css/consulservi.css" />
     <!--ICONS-->
     <link
       rel="stylesheet"
@@ -54,7 +54,7 @@
           </li>
           <!--SIDE-ITEM-->
           <li class="side-item">
-            <a href="servicos.html">
+            <a href="pgCadServico.html">
               <i class="bi bi-person-workspace"></i>
               <span class="descricao-item"> SERVIÇOS </span>
             </a>
@@ -84,25 +84,24 @@
     <main>
       <div class="container">
         <div class="header-cliente">
-          <h2>Clientes</h2>
-          <a href="cadcliente.html">
+          <h2>Serviços</h2>
+          <a href="pgCadServico.html">
             <button>Cadastrar</button>
           </a>
         </div><!--HEADER-CLIENTE-->
         <div class="divider"></div>
         <div class="header2-cliente">
-          <div class="select-container">
-            <label for="cliente">Categoria</label>
-            <select id="cliente" class="form-select" aria-label="Default select example">
-              <option selected>Tipo de Cliente</option>
-              <option value="1">Todos</option>
-              <option value="2">Cliente</option>
-              <option value="3">Profissional</option>
-            </select>
-          </div>          
-          <input type="text" name="nome" placeholder="Nome" class="input-text">
-          <input type="number" name="cpf/cnpj" placeholder="CPF/CNPJ" class="input-number">
-          <input type="number" name="telefone" placeholder="Telefone" class="input-number">
+            <div class="select-container">
+                <label for="cliente">Tipo de Serviço</label>
+                <select id="clienteServico" class="form-select" aria-label="Default select example">
+                  <option selected>Selecione um Serviço</option>
+                  <option value="consul">Consulta</option>
+                  <option value="alSala">Aluguel de Sala</option>
+                  <option value="alEq">Aluguel de Equipamentos</option>
+                </select>
+              </div>       
+          <input type="text" name="nome" placeholder="Nome do Serviço" class="input-text">
+          <input type="text" name="descricao" placeholder="Descrição do Serviço" class="input-number">
           <a href="#">
             <button>Consultar</button>
           </a>
@@ -112,46 +111,46 @@
             <thead>
               <tr>
                 <th>Nome</th>
-                <th>Categoria</th>
-                <th>Endereço</th>
-                <th>CPF/CNPJ</th>
+                <th>Tipo</th>
+                <th>Descrição</th>
+                <th>Valor</th>
                 <th>Ações</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Lucas Menezes</td>
-                <td>Cliente</td>
-                <td>Rua das Flores, 123, Centro, São Paulo, SP, 01000-000</td>
-                <td>123.321.123-21</td>
+                <td>Lipoaspiração</td>
+                <td>Consulta</td>
+                <td>Remoção de gordura corporal localizada</td>
+                <td>R$8.000</td>
                 <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
               </tr>
               <tr>
-                <td>Julia Carvalho</td>
-                <td>Profissional</td>
-                <td>Avenida do Sol, 456, Jardim Botânico, Rio de Janeiro, RJ, 22460-000</td>
-                <td>00.000.000/0001-00</td>
+                <td>Botox</td>
+                <td>Consulta</td>
+                <td>Redução de rugas faciais temporárias</td>
+                <td>R$1.000</td>
                 <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
               </tr>
               <tr>
-                <td>Mateus Barbosa</td>
-                <td>Profissional</td>
-                <td>Travessa da Lua, 789, Boa Vista, Recife, PE, 50070-000</td>
-                <td>00.000.000/0001-00</td>
+                <td>Rinoplastia</td>
+                <td>Consulta</td>
+                <td>Alteração de forma do nariz</td>
+                <td>R$12.000</td>
                 <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
               </tr>
               <tr>
-                <td>Ana Clara Ferreira</td>
-                <td>Cliente</td>
-                <td>Praça das Estrelas, 321, Savassi, Belo Horizonte, MG, 30140-000</td>
-                <td>123.321.123-21</td>
+                <td>Sala</td>
+                <td>Aluguel de sala</td>
+                <td>Sala moderna para procedimentos estéticos</td>
+                <td>R$1.000</td>
                 <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
               </tr>
               <tr>
-                <td>Pedro Henrique Silva</td>
-                <td>Cliente</td>
-                <td>Alameda dos Planetas, 654, Batel, Curitiba, PR, 80420-000</td>
-                <td>123.321.123-21</td>
+                <td>Laser CO2 fracionado</td>
+                <td>Aluguel de equipamento</td>
+                <td> Rejuvenescimento e cicatrizes por laser</td>
+                <td>R$2.000</td>
                 <td><a href="#"><i class="bi bi-clipboard2-data-fill"></i></a> <a href="#"><i class="bi bi-pencil"></i></a> <a href="#"><i class="bi bi-trash"></i></a> <a href="#"><i class="bi bi-geo-alt"></i></a></td>
               </tr>
             </tbody>
